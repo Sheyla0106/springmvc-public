@@ -1,0 +1,9 @@
+idea/            //忽略idea目录下的所有文件
+/idea/do.txt     //忽略某个具体文件
+!test.txt        //不忽略 test.txt 文件
+/TODO            //仅仅忽略项目根目录下的 TODO 文件，不包括 test/TODO
+*.zip            //忽略所有.zip结尾的文件
+doc/*.txt        //忽略 doc/notes.txt,但不包括 doc/server/arch.txt
+*.class      //忽略calss文件
+.idea/
+.iml
