@@ -1,10 +1,10 @@
-idea/            //ºöÂÔideaÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş
-/idea/do.txt     //ºöÂÔÄ³¸ö¾ßÌåÎÄ¼ş
-!test.txt        //²»ºöÂÔ test.txt ÎÄ¼ş
-/TODO            //½ö½öºöÂÔÏîÄ¿¸ùÄ¿Â¼ÏÂµÄ TODO ÎÄ¼ş£¬²»°üÀ¨ test/TODO
-*.zip            //ºöÂÔËùÓĞ.zip½áÎ²µÄÎÄ¼ş
-doc/*.txt        //ºöÂÔ doc/notes.txt,µ«²»°üÀ¨ doc/server/arch.txt
-*.class      //ºöÂÔcalssÎÄ¼ş
+ï»¿idea/            //å¿½ç•¥ideaç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶
+/idea/do.txt     //å¿½ç•¥æŸä¸ªå…·ä½“æ–‡ä»¶
+!test.txt        //ä¸å¿½ç•¥ test.txt æ–‡ä»¶
+/TODO            //ä»…ä»…å¿½ç•¥é¡¹ç›®æ ¹ç›®å½•ä¸‹çš„ TODO æ–‡ä»¶ï¼Œä¸åŒ…æ‹¬ test/TODO
+*.zip            //å¿½ç•¥æ‰€æœ‰.zipç»“å°¾çš„æ–‡ä»¶
+doc/*.txt        //å¿½ç•¥ doc/notes.txt,ä½†ä¸åŒ…æ‹¬ doc/server/arch.txt
+*.class      //å¿½ç•¥calssæ–‡ä»¶
 .idea/
 .iml
 target/
