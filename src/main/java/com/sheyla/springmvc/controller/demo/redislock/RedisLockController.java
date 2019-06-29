@@ -47,7 +47,8 @@ public class RedisLockController {
     }
 
     @ResponseBody
-    @RequestMapping("/{productId}")
+    @RequestMapping(value = "/{productId}", produces = "text/html; charset=utf-8")
+    //@RequestMapping(value = "/{productId}")需要搭配mvc配置使用
     public String redder(@PathVariable String productId) throws IOException {
         String key = "test123";
         //加锁

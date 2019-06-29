@@ -5,7 +5,7 @@ import org.redisson.config.Config;
 
 /**
  * @Author: sheyla
- * @Description:
+ * @Description:redis锁的配置类，单机版
  * @Date:Create：in 2019/6/25 0:03
  * @Modified By：
  */
