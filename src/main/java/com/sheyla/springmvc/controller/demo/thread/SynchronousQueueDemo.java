@@ -10,11 +10,13 @@ import java.util.concurrent.TimeUnit;
  * @Date:Create：in 2019/6/2 14:14
  * @Modified By：
  * 不存储元素的阻塞队列
+ * <p>
+ * 只有一个元素，多于一个就阻塞，知道被消费了
  */
 public class SynchronousQueueDemo {
     public static void main(String[] args) {
 
-        long start=System.currentTimeMillis();
+        long start = System.currentTimeMillis();
 
         BlockingQueue<String> blockingQueue = new SynchronousQueue<>();
 
@@ -60,17 +62,16 @@ public class SynchronousQueueDemo {
                 System.out.println(Thread.currentThread().getName() + "\t take:" + blockingQueue.take());
 
 
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }, "BBB").start();
 
-        while (Thread.activeCount()>2){
+        while (Thread.activeCount() > 2) {
             Thread.yield();
         }
 
-        System.out.println("程序执行时间："+(System.currentTimeMillis()-start)+"毫秒");
+        System.out.println("程序执行时间：" + (System.currentTimeMillis() - start) + "毫秒");
 
     }
 }

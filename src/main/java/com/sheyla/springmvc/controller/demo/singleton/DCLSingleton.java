@@ -1,17 +1,18 @@
 package com.sheyla.springmvc.controller.demo.singleton;
 
 public class DCLSingleton {
-    private static DCLSingleton instance = null;
+    private static volatile DCLSingleton instance = null;
 
     private DCLSingleton() {
 
         System.out.println(Thread.currentThread().getName() + "  我是构造函数SingletonDemo，创建线程完成！");
     }
+
     /**
      * DCL double check lock 双端检查机制
      * 同步代码段  指令重拍 +禁止指令重排 valolite
      * 问题：
-     *    instance=new SingletonDemo()
+     * instance=new SingletonDemo()
      *
      * @return
      */
