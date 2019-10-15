@@ -12,14 +12,21 @@ public class IntegerTest {
         Integer a = new Integer(1);
         Integer b = new Integer(1);
         System.out.println(a == b);
-
+        /**
+         * valueOf 使用了高頻緩存
+         */
         Integer c = Integer.valueOf(1);
         Integer d = Integer.valueOf(1);
         System.out.println(c == d);
 
+        /**
+         *自动装箱调用valueOf方法
+         */
         Integer e = 1;
         Integer f = 1;
         System.out.println(e == f);
+
+
 
        /* String aa = "123";
         String bb = "123";
@@ -37,7 +44,6 @@ public class IntegerTest {
         Boolean aaa = new Boolean(true);
         Boolean bbb = new Boolean("true");
         System.out.println(aaa == bbb);*/
-
 
 
     }
